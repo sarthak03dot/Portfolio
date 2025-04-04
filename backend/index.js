@@ -16,7 +16,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.post("/sent-message", async (req, res) => {
-//   const { name, email, phone, email_sub, message } = req.body;
+  const { name, email, phone, email_sub, message } = req.body;
 
 
   try {

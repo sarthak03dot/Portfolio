@@ -39,7 +39,7 @@ form.addEventListener("submit", async (e) => {
   const data = Object.fromEntries(formData.entries());
 
   try {
-    const res = await fetch("http://localhost:5000/sent-message", {
+    const res = await fetch("https://portfolio-contact-cgr9.onrender.com/sent-message", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

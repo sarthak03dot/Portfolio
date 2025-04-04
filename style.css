@@ -90,7 +90,6 @@ section {
 
 .home-img img {
   width: 25vw;
-  /* height: 50rem; */
   border-radius: 50%;
   box-shadow: 0 0 25px var(--main-color);
   cursor: pointer;
@@ -186,8 +185,6 @@ span {
 }
 .about-img img {
   width: 25vw;
-  /* width:50rem; */
-  /* height: 50rem; */
   border: 2px solid var(--main-color);
   box-shadow: 0 0 25px var(--main-color);
   cursor: pointer;
@@ -280,9 +277,7 @@ span {
 }
 
 .testimonial-box img {
-  width: 25vw;
-  /* height: 30rem;
-    width: 30rem; */
+  width: 20vw;
   border-radius: 50%;
   border: 2px solid var(--main-color);
   box-shadow: 0 0 25px var(--main-color);

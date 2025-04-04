@@ -26,6 +26,39 @@ body {
   color: var(--text-color);
 }
 
+#notification {
+  position: fixed;
+  top: 80px;
+  min-width: 280px;
+  max-width: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 20px;
+  border-radius: 10px;
+  background-color:var(--bg-color); 
+  color: var(--text-color);
+  font-weight: bold;
+  font-size: 1.6rem;
+  z-index: 1000;
+  box-shadow: 0 0 25px var(--main-color, rgba(0, 0, 0, 0.2));
+  overflow: hidden;
+  text-align: center;
+  display: none; 
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#progress-bar {
+  height: 4px;
+  width: 0%;
+  background-color: red;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width 5s linear;
+}
+
+
 section {
   min-height: 100vh;
   padding: 10rem 9% 2rem;

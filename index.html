@@ -11,6 +11,8 @@
     <title>Sarthak Singh</title>
   </head>
   <body>
+     
+
     <!-- Header Section Code -->
 
     <header class="header">
@@ -205,14 +207,30 @@
     <section class="contact" id="contact">
       <h2 class="heading">Contact <span>Me</span></h2>
 
-      <form action="#">
+      <!-- <form action="http://localhost:5000/sent-message" method="POST"> -->
+      <form id="contactForm">
         <div class="input-box">
-          <input type="text" placeholder="Full Name" />
-          <input type="email" placeholder="Email Address" />
+          <input type="text" name="name" placeholder="Full Name" required />
+          <input
+            type="email"
+            name="email"
+            placeholder="Email Address"
+            required
+          />
         </div>
         <div class="input-box">
-          <input type="number" placeholder="Phone Number" />
-          <input type="text" placeholder="Email Subject" />
+          <input
+            type="number"
+            name="phone"
+            placeholder="Phone Number"
+            required
+          />
+          <input
+            type="text"
+            name="email_sub"
+            placeholder="Email Subject"
+            required
+          />
         </div>
         <textarea
           name="message"
@@ -220,8 +238,13 @@
           cols="30"
           rows="10"
           placeholder="Your Message"
+          required
         ></textarea>
         <input type="submit" value="Send Message" class="btn" />
+        <div id="notification">
+          <span id="notification-text"></span>
+          <div id="progress-bar"></div>
+        </div>
       </form>
     </section>
 
